@@ -33,7 +33,7 @@ const mongoose = require("mongoose");
 const allArticlesRouter = require("./routes/all-articles");
 app.use(express.urlencoded({ extended: true })); //this will helps to get submitted data of form in req.body object
 
-const dbURI = "mongodb+srv://moehormuz:owRJrHr6DijPQRVX@cluster0.sohofpd.mongodb.net/all-data?retryWrites=true&w=majority"
+const dbURI = "mongodb+srv://moehormuz:password@cluster0.sohofpd.mongodb.net/all-data?retryWrites=true&w=majority"
 mongoose.connect(dbURI)
   .then((result) => {
     console.log("Database connected,");
